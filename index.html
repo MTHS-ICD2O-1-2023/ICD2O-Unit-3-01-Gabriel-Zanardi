@@ -22,16 +22,16 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The XXX program</span>
+        <span class="mdl-layout-title">Area of a Trapezoid, with JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/trapezoid.svg" width="100" height="100"
+        <img src="./images/trapezoid.svg" 
           alt="area of a trapezoid" />
       </div>
       <div class="page-content">
-        Enter ...
+        Please enter integers for the dimensions...
       </div>
       <br />
       <!-- Simple Textfield for integers-->
@@ -40,17 +40,36 @@
           <!-- input pattern attribute -->
           <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-a" />
           <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="demo-input">Length of ... (mm)</label>
+          <label class="mdl-textfield__label" for="demo-input">base a (mm)</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number</span>
         </div>
-      </form>
       <br />
+      <div class="mdl-textfield mdl-js-textfield">
+        <!-- input pattern attribute -->
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-b" />
+        <!-- mdl-textfield__label -->
+        <label class="mdl-textfield__label" for="demo-input">base b (mm)</label>
+        <!-- class "mdl-textfield__error" -->
+        <span class="mdl-textfield__error">Input is not a number</span>
+      </div>
+      <br>
+      <div class="mdl-textfield mdl-js-textfield">
+          <!-- input pattern attribute -->
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
+        <!-- mdl-textfield__label -->
+        <label class="mdl-textfield__label" for="demo-input">height (mm)</label>
+        <!-- class "mdl-textfield__error" -->
+        <span class="mdl-textfield__error">Input is not a number</span>
+      </div>
+      <br>
+      <br>
       <!-- Accent-colored raised button with ripple -->
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
         onclick="myButtonClicked()">
         Calculate
       </button>
+    </form>
       <br />
       <br />
       <div class="page-content-answer">
